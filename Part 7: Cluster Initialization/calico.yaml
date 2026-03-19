@@ -1,1 +1,6 @@
 
+### Note on calico.yaml
+
+The Calico manifest is not committed to this repo. Download it directly using the curl 
+command in step D of part 7. This ensures you are working with the correct versioned file 
+and can apply your own pod CIDR before deploying.

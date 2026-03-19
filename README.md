@@ -17,18 +17,6 @@ installation process from hypervisor setup through cluster validation.
 Each directory in this repo corresponds to a phase of the installation process. Work through them in order because each phase builds on the previous one.
 
 
-| Phase | Directory | Description |
-|-------|-----------|-------------|
-| 1 | [Part 1: Hypervisor Setup](./Part 1:Hypervisor Setup/) | Install and configure QEMU/libvirt on the bastion host |
-| 2 | [02-vm-provisioning](./02-vm-provisioning/) | Create the control plane and worker node VMs |
-| 3 | [03-node-configuration](./03-node-configuration/) | Configure all nodes (hostname, swap, SELinux, firewall, kernel modules) |
-| 4 | [04-containerd](./04-containerd/) | Install and configure the container runtime on all nodes |
-| 5 | [05-kubernetes-components](./05-kubernetes-components/) | Install kubeadm, kubelet, and kubectl on all nodes |
-| 6 | [06-haproxy](./06-haproxy/) | Install and configure HAProxy on the bastion host |
-| 7 | [07-cluster-init](./07-cluster-init/) | Initialize the cluster, install Calico, and join all nodes |
-| 8 | [08-validation](./08-validation/) | Confirm all nodes are healthy and the cluster is ready |
-
-
 
 ## Prerequisites
 - Fedora Workstation 43 is needed to setup the hypervisor and VMs: [Download Fedora Workstation ISO Here](https://fedoraproject.org/workstation/download/)

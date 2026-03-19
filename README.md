@@ -1,4 +1,4 @@
-# Technical write of a Kubernetes cluster installation
+# Technical write up of a Kubernetes cluster installation
 A practical homelab guide for deploying a highly available, multi-node Kubernetes cluster 
 on a local machine using KVM/QEMU virtual machines. This project documents the full 
 installation process from hypervisor setup through cluster validation.
@@ -15,6 +15,17 @@ installation process from hypervisor setup through cluster validation.
 
 ## How To Use This Guide
 Each directory in this repo corresponds to a phase of the installation process. Work through them in order because each phase builds on the previous one.
+| Phase | Directory | Description |
+|-------|-----------|-------------|
+| 1 | [Part 1: Hypervisor Setup](./Part%201:%20Hypervisor%20Setup/) | Install and configure QEMU/libvirt on the bastion host |
+| 2 | [Part 2: VM Provisioning](./Part%202:%20VM%20Provisioning/) | Create the control plane and worker node VMs |
+| 3 | [Part 3: Node Configuration](./Part%203:%20Node%20Configuration/) | Configure all nodes (hostname, swap, SELinux, firewall, kernel modules) |
+| 4 | [Part 4: Containerd Setup](./Part%204:%20Containerd%20Setup/) | Install and configure the container runtime on all nodes |
+| 5 | [Part 5: Kubernetes Components](./Part%205:%20Kubernetes%20Components/) | Install kubeadm, kubelet, and kubectl on all nodes |
+| 6 | [Part 6: HaProxy Setup](./Part%206:%20HaProxy%20Setup/) | Install and configure HAProxy on the bastion host |
+| 7 | [Part 7: Cluster Initialization](./Part%207:%20Cluster%20Initialization/) | Initialize the cluster, install Calico, and join all nodes |
+| 8 | [Part 8: Validation](./Part%208:%20Validation/) | Confirm all nodes are healthy and the cluster is ready |
+
 
 
 

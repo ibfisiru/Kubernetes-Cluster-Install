@@ -4,9 +4,9 @@ on a local machine using KVM/QEMU virtual machines. This project documents the f
 installation process from hypervisor setup through cluster validation.
 
 
-> **Note:** This guide is intended for those who already have an understanding of Kubernetes and its core components (control plane, kubelet, etcd, CNI, etc.). It does not cover Kubernetes concepts rather the installation process.
+> **Note:** This guide is intended for those who already have an understanding of Kubernetes and its core components (control plane, kubelet, etcd, CNI, etc.). It does not cover Kubernetes concepts, rather the installation process.
 
-> **Distribution:** All steps written in this project are for the **Fedora Linux** distribution. The workflow is also compatible with **Red Hat Enterprise Linux (RHEL)**. Other distributions (Ubuntu, Debian, Arch, etc.) can follow the same general workflow but package managers and some commands will differ. Please see documentation for distribution of Linux
+> **Distribution:** All steps written in this project are for the **Fedora Linux** distribution. The workflow is also compatible with **Red Hat Enterprise Linux (RHEL)**. Other distributions (Ubuntu, Debian, Arch, etc.) can follow the same general workflow but package managers and some commands will differ. Please refer to your Linux distributions package manager documentation for corresponding commands.
 
 > **Automation:** Many of the commands in this guide can be batched into scripts. However, all steps are intentionally manual to provide insight into how each step contributes to the overall process of standing up a Kubernetes cluster.
 
